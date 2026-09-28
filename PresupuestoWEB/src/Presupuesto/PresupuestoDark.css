@@ -1,0 +1,201 @@
+/* Tokens y overrides limitados al tema nocturno; el modo normal usa los estilos originales. */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --ink: #e7eee9;
+  --muted: #a0b0a6;
+  --line: #34443c;
+  --green: #4fc28d;
+  --green-dark: #39a976;
+  background: #101713;
+  color: var(--ink);
+}
+
+:root[data-theme='dark'] body,
+:root[data-theme='dark'] #root {
+  min-height: 100vh;
+  background: #101713;
+  color: var(--ink);
+}
+
+:root[data-theme='dark'] .app-shell { color: var(--ink); }
+
+:root[data-theme='dark'] .app-topbar,
+:root[data-theme='dark'] .editor-panel,
+:root[data-theme='dark'] .takeoff-card,
+:root[data-theme='dark'] .preview-section,
+:root[data-theme='dark'] .catalog-card,
+:root[data-theme='dark'] .template-selection,
+:root[data-theme='dark'] .transfer-dialog,
+:root[data-theme='dark'] .confirm-dialog,
+:root[data-theme='dark'] .modal,
+:root[data-theme='dark'] .dialog,
+:root[data-theme='dark'] .popover,
+:root[data-theme='dark'] .dropdown-menu {
+  background-color: #18221c;
+  color: var(--ink);
+}
+
+:root[data-theme='dark'] .editor-panel,
+:root[data-theme='dark'] .takeoff-card,
+:root[data-theme='dark'] .preview-section,
+:root[data-theme='dark'] .catalog-card,
+:root[data-theme='dark'] .transfer-dialog,
+:root[data-theme='dark'] .confirm-dialog,
+:root[data-theme='dark'] .modal,
+:root[data-theme='dark'] .dialog { border-color: var(--line); }
+
+:root[data-theme='dark'] .page-heading h1,
+:root[data-theme='dark'] .panel-heading h2,
+:root[data-theme='dark'] .panel-heading h3,
+:root[data-theme='dark'] .takeoff-card h3,
+:root[data-theme='dark'] .preview-toolbar h2,
+:root[data-theme='dark'] .form-field label,
+:root[data-theme='dark'] .form-field > span,
+:root[data-theme='dark'] .section-title,
+:root[data-theme='dark'] .brand,
+:root[data-theme='dark'] .brand strong { color: var(--ink); }
+
+:root[data-theme='dark'] p,
+:root[data-theme='dark'] .form-field small,
+:root[data-theme='dark'] .heading-subtitle,
+:root[data-theme='dark'] .panel-heading p,
+:root[data-theme='dark'] .takeoff-card p,
+:root[data-theme='dark'] .workflow-origin,
+:root[data-theme='dark'] .transfer-dialog > p,
+:root[data-theme='dark'] .transfer-list span { color: var(--muted); }
+
+:root[data-theme='dark'] .form-field input,
+:root[data-theme='dark'] .form-field textarea,
+:root[data-theme='dark'] .form-field select,
+:root[data-theme='dark'] .workflow-bulk select,
+:root[data-theme='dark'] .takeoff-table select,
+:root[data-theme='dark'] .catalog-search,
+:root[data-theme='dark'] .catalog-search input,
+:root[data-theme='dark'] .editable-input,
+:root[data-theme='dark'] .editable-textarea,
+:root[data-theme='dark'] .table-input,
+:root[data-theme='dark'] .category-select,
+:root[data-theme='dark'] select,
+:root[data-theme='dark'] textarea,
+:root[data-theme='dark'] input:not([type='checkbox']):not([type='radio']):not([type='file']) {
+  background-color: #111a15;
+  color: var(--ink);
+  border-color: #405147;
+}
+
+:root[data-theme='dark'] input::placeholder,
+:root[data-theme='dark'] textarea::placeholder { color: #a1b0a7; }
+
+:root[data-theme='dark'] .button-quiet,
+:root[data-theme='dark'] .button-outline {
+  background-color: #202d25;
+  border-color: #405147;
+  color: #dce8df;
+}
+
+:root[data-theme='dark'] .button-quiet:hover,
+:root[data-theme='dark'] .button-outline:hover,
+:root[data-theme='dark'] .takeoff-tabs button:hover {
+  background-color: #293a30;
+  border-color: #547463;
+}
+
+:root[data-theme='dark'] .takeoff-tabs,
+:root[data-theme='dark'] .workflow-bulk,
+:root[data-theme='dark'] .validation-guide,
+:root[data-theme='dark'] .template-selection,
+:root[data-theme='dark'] .workflow-summary span,
+:root[data-theme='dark'] .takeoff-tabs button.active {
+  background-color: #202d25;
+  border-color: #405147;
+  color: #dce8df;
+}
+
+:root[data-theme='dark'] .takeoff-tabs button { color: #c0cec5; }
+:root[data-theme='dark'] .takeoff-tabs button.active { color: #8ae1b2; }
+
+:root[data-theme='dark'] .type-chip,
+:root[data-theme='dark'] .template-card,
+:root[data-theme='dark'] .catalog-search,
+:root[data-theme='dark'] .transfer-list > div {
+  background-color: #1d2922;
+  border-color: #3b4c41;
+  color: #dce8df;
+}
+
+:root[data-theme='dark'] .template-card:hover:not(:disabled) {
+  background-color: #25382c;
+  border-color: #5b9a75;
+}
+
+:root[data-theme='dark'] .items-table,
+:root[data-theme='dark'] .takeoff-table,
+:root[data-theme='dark'] .measurements-table { color: var(--ink); }
+
+:root[data-theme='dark'] .items-table th,
+:root[data-theme='dark'] .takeoff-table th,
+:root[data-theme='dark'] .measurements-table th {
+  background: #25332a;
+  color: #e5eee8;
+  border-color: #435449;
+}
+
+:root[data-theme='dark'] .items-table td,
+:root[data-theme='dark'] .takeoff-table td,
+:root[data-theme='dark'] .measurements-table td { border-color: #39483f; }
+
+:root[data-theme='dark'] .items-table tbody tr,
+:root[data-theme='dark'] .takeoff-table tbody tr,
+:root[data-theme='dark'] .measurements-table tbody tr {
+  background-color: #18221c;
+  color: var(--ink);
+}
+
+:root[data-theme='dark'] .items-table tbody tr:nth-child(even),
+:root[data-theme='dark'] .takeoff-table tbody tr:nth-child(even),
+:root[data-theme='dark'] .measurements-table tbody tr:nth-child(even) { background-color: #1d2922; }
+
+:root[data-theme='dark'] .notice,
+:root[data-theme='dark'] .notice-info {
+  background-color: #202c35;
+  border-color: #354b5b;
+  color: #d8e6ef;
+}
+
+:root[data-theme='dark'] .workflow-badge { background: #2b373d; color: #d2e0e3; }
+:root[data-theme='dark'] .workflow-badge.valido { background: #18392b; color: #84e0b0; }
+:root[data-theme='dark'] .workflow-badge.advertencia { background: #43351b; color: #f2ce78; }
+:root[data-theme='dark'] .workflow-badge.error { background: #442523; color: #ff9e91; }
+:root[data-theme='dark'] .transfer-confirmation { background: rgb(3 8 5 / 78%); }
+:root[data-theme='dark'] :focus-visible { outline-color: #70dba3; }
+
+.theme-toggle { white-space: nowrap; }
+.theme-toggle-icon { display: inline-flex; }
+
+@media (max-width: 760px) {
+  .theme-toggle { width: 37px; min-width: 37px; padding: 0; }
+  .theme-toggle-label { display: none; }
+}
+
+@media print {
+  :root,
+  body,
+  #root,
+  .app-shell {
+    color-scheme: light !important;
+    color: #172923 !important;
+    background: #fff !important;
+  }
+
+  .budget-document,
+  .budget-document * {
+    color: #172923 !important;
+    background-color: #fff !important;
+    border-color: #b8c1bb !important;
+  }
+
+  .budget-document th,
+  .budget-document .quotation-box {
+    background-color: #f0f2f0 !important;
+  }
+}

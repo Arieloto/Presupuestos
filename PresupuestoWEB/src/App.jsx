@@ -1,16 +1,8 @@
-import { useState } from 'react'
-import Presupuesto from './Presupuesto/presupuesto'
+import PresupuestoApp from './Presupuesto/PresupuestoApp.jsx'
 
 
 function App() {
- 
-
-  return (
-    <>
-    <Presupuesto></Presupuesto>
-
-    </>
-  )
+  return <PresupuestoApp />
 }
 
 export default App
