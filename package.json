@@ -1,5 +1,13 @@
 {
-  "dependencies": {
-    "lucide-react": "^0.525.0"
+  "name": "volt-presupuestos-electricos",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Volt — cubicación y presupuestos eléctricos",
+  "scripts": {
+    "dev": "npm --prefix PresupuestoWEB run dev",
+    "build": "npm --prefix PresupuestoWEB run build",
+    "lint": "npm --prefix PresupuestoWEB run lint",
+    "test": "npm --prefix PresupuestoWEB run test -- --run",
+    "preview": "npm --prefix PresupuestoWEB run preview"
   }
 }

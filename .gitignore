@@ -3,6 +3,8 @@ node_modules/
 **/node_modules/
 dist/
 **/dist/
+PresupuestoWEB/.vercel/
+.vercel/
 
 # Local environment and editor files
 .env
